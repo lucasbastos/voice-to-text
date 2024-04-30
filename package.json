@@ -1,0 +1,27 @@
+{
+  "name": "voice-to-note",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/dom-speech-recognition": "^0.0.4",
+    "date-fns": "^3.6.0",
+    "lucide-vue-next": "^0.376.0",
+    "radix-vue": "^1.7.3",
+    "vue": "^3.4.21",
+    "vue-i18n": "^9.13.1",
+    "vue-toast-notification": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0"
+  }
+}

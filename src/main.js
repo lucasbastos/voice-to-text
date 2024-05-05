@@ -9,7 +9,7 @@ createApp(App)
 .use(ToastPlugin)
 .use(createI18n({
     legacy: false,
-    locale: 'ja', // set current locale
+    locale: 'en', // set current locale
     fallbackLocale: 'en',
     messages: {
       en: {

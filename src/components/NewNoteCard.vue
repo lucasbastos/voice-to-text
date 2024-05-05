@@ -5,10 +5,10 @@
       @click="openModal"
     >
       <span class="text-sm font-medium text-slate-200">
-        Adicionar nota
+        Add a new note
       </span>
       <p class="text-sm leading-6 text-slate-400">
-        Grave uma nota em áudio que será convertida para texto automaticamente.
+        Record an audio note or write a text note.
       </p>
     </div>
 
@@ -27,25 +27,25 @@
         <form class="flex-1 flex flex-col" @submit.prevent="handleSaveNote">
           <div class="flex flex-1 flex-col gap-3 p-5">
             <span class="text-sm font-medium text-slate-300">
-              Adicionar nota
+              Add a new note
             </span>
 
             <p v-if="shouldShowOnboarding" class="text-sm leading-6 text-slate-400">
-              Comece
+              Start
               <button
                 type="button"
                 @click="handleStartRecording"
                 class="font-medium text-lime-400 hover:underline"
               >
-                gravando uma nota
+                recording a note
               </button>
-              em áudio ou se preferir
+              in your own voice or
               <button
                 type="button"
                 @click="handleStartEditor"
                 class="font-medium text-lime-400 hover:underline"
               >
-                utilize apenas texto
+                write a text note
               </button>
               .
             </p>
@@ -64,14 +64,14 @@
             class="w-full flex items-center justify-center gap-2 bg-slate-900 py-4 text-center text-sm text-slate-300 outline-none font-medium hover:text-slate-100"
           >
             <div class="size-3 rounded-full bg-red-500 animate-pulse" />
-            Gravando! (clique p/ interromper)
+            Recording! (Click to stop)
           </button>
           <button
             v-else
             type="submit"
             class="w-full bg-lime-400 py-4 text-center text-sm text-lime-950 outline-none font-medium hover:bg-lime-500"
           >
-            Salvar nota
+            Save
           </button>
         </form>
       </div>

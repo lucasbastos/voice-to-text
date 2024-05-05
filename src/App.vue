@@ -1,13 +1,11 @@
 <template>
-  <button @click="switchLanguage">Switch Language</button>
-  <h1>{{ t('message.hello') }}</h1>
   <div class="mx-auto max-w-6xl my-12 space-y-6 px-5">
     <img :src="logo" alt="Logo" class="w-16 h-16" />
 
     <form class="w-full">
       <input
         type="text"
-        placeholder="Busque em suas notas..."
+        placeholder="Search notes..."
         class="w-full bg-transparent text-3xl font-semibold tracking-tight outline-none placeholder:text-state-500"
         @input="handleSearch"
       />
@@ -26,10 +24,6 @@
       />
     </div>
   </div>
-
-  <select v-model="$i18n.locale">
-      <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
-    </select>
 </template>
 
 <script setup>

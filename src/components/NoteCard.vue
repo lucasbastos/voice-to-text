@@ -34,9 +34,9 @@
             @click="onNoteDeleted(note.id)"
             class="w-full bg-slate-800 py-4 text-center text-sm text-slate-300 outline-none font-medium group"
           >
-            Deseja
+            Would like to
             <span class="text-red-400 group-hover:underline">
-              apagar essa nota
+              delete this note
             </span>
             ?
           </button>
